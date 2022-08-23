@@ -31,6 +31,7 @@ header.sticky{
 header .logo{
     width: 25%;
     cursor: pointer;
+    /* position: fixed; */
     /* border: 2px red solid;    */
 }
 header .logo img{
@@ -88,20 +89,19 @@ header .openMenu {
   .fa-github:hover {
     color: blue;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1300px) {
     header{
         /* position: fixed; */
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 40%;
-    }
-    header .logo{
-        width: 70%;
+        grid-gap: 90%;
     }
     header .logo img{
-        float: left;
+        width: 15%;
         text-align: center;
-        width: 150%;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        position: fixed;
     }
     header .mainMenu {
       height: 100vh;
@@ -198,6 +198,8 @@ header.sticky ul li a:hover{
     /* position: absolute; */
     padding-top: 150px;
     color: #fff;
+    /* height: 100vh; */
+    padding-bottom: 35px;
     /* border: 2px red solid; */
 }
 .banner .title h1{
@@ -312,7 +314,7 @@ span{
 .about h2{
     font-weight: bold;
     font-size: 2.5em;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 }
 .about p{
     display: flex;
@@ -661,7 +663,7 @@ hr{
     text-align: center;
 }
 .card-1{
-    background-color: rgb(156, 4, 238);
+    background-color: #1a659e;
     border: 2px white solid;
     transition: all 0.5s ease;
     /* border-radius: 15px; */
@@ -706,7 +708,7 @@ hr{
 }
 
 .card-2{
-    background-color: rgb(255, 89, 0);
+    background-color: #b388eb;
     border: 2px white solid;
     transition: all 0.5s ease;
     /* border-radius: 15px; */
@@ -740,7 +742,7 @@ hr{
 
 }
 .card-3{
-    background-color: rgb(156, 4, 238);
+    background-color: #f49f0a;
     border: 2px white solid;
     transition: all 0.5s ease;
     /* border-radius: 15px; */
@@ -1078,14 +1080,14 @@ footer{
     margin: 1rem 0 3rem 0;
 }
 .socials li{
-    margin: 0px 10px;
+    padding: 0px 15px;
 }
 .socials a{
     text-decoration: none;
     color: white;
 }
 .socials a i{
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     transition: color 0.4s ease;
 }
 .socials a:hover{
