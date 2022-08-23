@@ -71,3 +71,16 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
+
+
+const buttons = document.querySelectorAll('.questions-container button');
+
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
