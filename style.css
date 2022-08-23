@@ -26,7 +26,11 @@ header{
 }
 header.sticky{
     padding: 5px 10px;
-    background: #fff;
+    background: url('/Images/Sticky-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    /* -webkit-filter: blur(5px); Safari 6.0 - 9.0 */
+      /* filter: blur(5px); */
 }
 header .logo{
     width: 25%;
