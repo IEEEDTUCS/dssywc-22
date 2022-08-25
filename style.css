@@ -713,7 +713,10 @@ hr{
     text-align: center;
 }
 .card-1{
-    background-color: #1a659e;
+    /* background-color: #1a659e; */
+    background: url('/Images/card1-bg.jpg');
+    background-size: cover;
+    background-position: center;
     border: 2px white solid;
     transition: all 0.5s ease;
     /* border-radius: 15px; */
@@ -762,14 +765,17 @@ hr{
     font-weight: bold;
     font-size: 1.2em;
     border: 2px solid white;
-    background: yellow;
+    background: rgba(255, 238, 0, 0.819);
     color: #fff;
     cursor: pointer;
 
 }
 
 .card-2{
-    background-color: #b388eb;
+    /* background-color: #b388eb; */
+    background: url('/Images/card2-bg.jpg');
+    background-size: cover;
+    background-position: center;
     border: 2px white solid;
     transition: all 0.5s ease;
     /* border-radius: 15px; */
@@ -806,13 +812,16 @@ hr{
     font-weight: bold;
     font-size: 1.2em;
     border: 2px solid white;
-    background: yellow;
+    background: rgba(255, 238, 0, 0.819);
     color: #fff;
     cursor: pointer;
 
 }
 .card-3{
-    background-color: #f49f0a;
+    /* background-color: #f49f0a; */
+    background: url('/Images/card1-bg.jpg');
+    background-size: cover;
+    background-position: center;
     border: 2px white solid;
     transition: all 0.5s ease;
     /* border-radius: 15px; */
@@ -849,7 +858,7 @@ hr{
     font-weight: bold;
     font-size: 1.2em;
     border: 2px solid white;
-    background: yellow;
+    background: rgba(255, 238, 0, 0.819);
     color: #fff;
     cursor: pointer;
 }
@@ -899,6 +908,7 @@ hr{
 .image__img {
     display: block;
     width: 100%;
+    height: 300px;
 }
 
 .image__overlay {
@@ -952,6 +962,11 @@ hr{
 {
     .galary .grid-content{
         display: block;
+    }
+    .image__img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 
