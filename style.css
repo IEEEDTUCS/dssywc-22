@@ -65,6 +65,7 @@ header ul li a{
     margin: 0 10px;
     text-decoration: none;
     color: #fff;
+    font-size: 15px;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
@@ -1062,7 +1063,7 @@ footer{
     cursor: pointer;
 }
 .questions-container .question p{
-    font-size: 10px;
+    font-size: 15px;
     max-height: 0;
     /* height: 100vh; */
     opacity: 0;
