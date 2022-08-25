@@ -1073,6 +1073,7 @@ footer{
     transition: all 0.6s ease;
     display: flex;
     text-align: justify;
+    /* text-justify: inter-word; */
 }
 .d-arrow{
     transition: transform 0.5s ease-in ;
@@ -1081,7 +1082,7 @@ footer{
 
 /*add this class when click*/
 .question p.show{
-    max-height: 200px; 
+    max-height: 1000px; 
     opacity: 1;
     padding:0px 15px 30px 15px;
 }
@@ -1092,5 +1093,8 @@ footer{
 {
     .questions-container .question button{
         gap: 10%;
+    }
+    .questions-container{
+        width: 80%;
     }
 }
