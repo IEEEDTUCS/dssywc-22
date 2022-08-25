@@ -726,16 +726,28 @@ hr{
 .card-3:hover{
     box-shadow: rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 0px, rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 0px;
 }
+
 .card-1 .content .contentBx{
     padding: 20px 20px;
+    text-align: center;
 }
 .card-1 .content .contentBx h1{
     margin: 20px 0px;
     font-size: 3em;
     color: yellow;
 }
-.card-1 .content .contentBx li{
+.card-1 .content .contentBx ul{
+    text-align: center;
+    /* align-content: center; */
+    /* border: 2px solid red; */
+}
+.card-1 .content .contentBx ul li{
     list-style: none;
+    margin: auto;
+    padding-right: 12%;
+    text-align: center;
+    /* border: 2px red solid; */
+    /* text-align: center; */
 }
 .card-1 .content .contentBx button a{
     text-decoration: none;
@@ -771,6 +783,9 @@ hr{
 }
 .card-2 .content .contentBx li{
     list-style: none;
+    margin: auto;
+    padding-right: 12%;
+    text-align: center;
 }
 .card-2 .content .contentBx button a{
     text-decoration: none;
@@ -805,6 +820,9 @@ hr{
 }
 .card-3 .content .contentBx li{
     list-style: none;
+    margin: auto;
+    padding-right: 12%;
+    text-align: center;
 }
 .card-3 .content .contentBx button a{
     text-decoration: none;
