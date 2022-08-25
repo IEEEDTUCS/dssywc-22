@@ -29,8 +29,9 @@ header.sticky{
     /* background: green; */
     /* background-size: cover;
     background-position: center;  */
-    background: rgba(255, 255, 255, 0.647); 
-    -webkit-background-composite: blur(8px);
+    /* background: rgba(255, 255, 255, 0.647);  */
+    /* -webkit-background-composite: blur(8px); */
+    background: white;
     width: 100%; 
 }
 
@@ -65,7 +66,7 @@ header ul li a{
     margin: 0 10px;
     text-decoration: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
@@ -222,7 +223,7 @@ header .openMenu {
 .banner{
     /* position: relative; */
     width: 100%;
-    /* height: 100vh; */
+    min-height: 100vh;
     background: url("/Images/Banner.jpg");
     background-size: cover;
     background-position: center;
@@ -245,25 +246,28 @@ header.sticky ul li a:hover{
 .banner{
     text-align: center;
     /* position: absolute; */
-    padding-top: 150px;
+    padding-top: 25vh;
     color: #fff;
-    /* height: 100vh; */
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
     /* border: 2px red solid; */
 }
 .banner .title h1{
     font-family: 'monument-extended';
     src: url('/MonumentExtended-Regular.otf');
-    font-size: 3em;
+    font-size: 3.4em;
 }
 .banner .title p{
     padding-top: 2px;
     font-weight: 2000;
 }
+.banner .container .register{
+    padding-top: 5vh;
+}
 .banner .container .countdown{
     color: #FFF;
     font-size: 60px;
     font-weight: 200;
+    padding-top: 4vh;
   }
   @media screen and (max-width: 480px) {
     .banner{
@@ -301,6 +305,13 @@ header.sticky ul li a:hover{
 
 .container{
     text-align: center;
+}
+.container .register{
+    padding: 2% 0;
+}
+.container .register h1{
+    font-size: 2.2rem;
+    color: rgb(222, 255, 5);
 }
 .container button{
     width: 200px;
@@ -416,6 +427,8 @@ article img, article.featured img{
     width: 100%;
     height: 80%;
     border: 2px white solid;
+    background-size: contain;
+    background-position: center;
     background: #000;
 }
 article.featured button{
@@ -466,7 +479,8 @@ article.featured button{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
+    margin: auto;
 }
 .speaker .container .card{
     display: flex;
@@ -476,21 +490,27 @@ article.featured button{
     flex-direction: column;
     text-align: center;
     vertical-align: auto;
-    height: 400px;
+    /* height: 400px; */
     margin: 20px;
     box-shadow: 0 0px 35px rgba(11, 226, 54, 0.5);
     border-radius: 15px;
+}
+.speaker .container .imgBx{
+    padding-top: 30px;
 }
 .speaker .container .card .contentBx{
     padding-top: 30px;
 }
 .fa-brands{
     font-size: 40px;  
-    cursor: pointer;  
+    cursor: pointer; 
+    padding-bottom: 10%; 
+    padding-top: 10%;
 }
 .speaker .container img{
     width: 70%;
     border-radius: 10%;
+    /* padding-top: 30px; */
 }
 @media screen and (max-width:760px){
     .speaker .container{
@@ -525,13 +545,14 @@ hr{
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
 .dark-bg-2 .spon-sub-head h1{
     padding-top: 30px;
     font-size: 1.5em;
 }
 .dark-bg-2 .spon-sub-head .content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     text-align: center;
     margin: 0px 25%;
 }
@@ -776,7 +797,7 @@ hr{
 
 .card-2{
     /* background-color: #b388eb; */
-    background: url('/Images/card2-bg.jpg');
+    background: url('/Images/card1-bg.jpg');
     background-size: cover;
     background-position: center;
     border: 2px white solid;
