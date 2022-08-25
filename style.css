@@ -27,11 +27,13 @@ header{
 header.sticky{
     padding: 5px 10px;
     /* background: green; */
-    background-size: cover;
-    background-position: center; 
-    background: rgba(255, 255, 255, 0.647); 
-    backdrop-filter: blur(8px);
+    /* background-size: cover;
+    background-position: center;  */
+    background: rgba(255, 255, 255, 0.505);
+    -webkit-backdrop-filter: blur(8px);
+    /* -webkit-filter: blur(8px); */
     width: 100%;
+    /* text-align: center; */
 }
 
 header .logo{
@@ -143,50 +145,9 @@ header .openMenu {
       background: none;
       color: blue;
     }
-    header.sticky .mainMenu {
-        height: 100vh;
-        position: fixed;
-        color: white;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        /* z-index: 100001; */
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        background: rgb(0, 0, 0);
-        transition: top 1s ease 0s;
-        display: none;
-        /* justify-content: space-between; */
-        /* z-index: 10001; */
-        /* z-index: 10000; */
-      }
-    header.sticky .openMenu i{
-        color: black;
-    }
-    header.sticky .openMenu {
-          color: white;
-        display: block;
-    }
-    header.sticky .mainMenu li a{
-        color: white;
-    }
-    header.sticky .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-    }
-    .icons i {
-      display: inline-block;
-      padding: 12px;
-    }
+    
   }
-  @media (max-width: 768px) {
-    header{
-        /* position: fixed; */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 90%;
-    }
+  @media only screen and (max-width: 768px) {
     header .logo img{
         width: 20%;
         text-align: center;
@@ -194,75 +155,13 @@ header .openMenu {
         /* margin-bottom: 20px; */
         position: fixed;
     }
-    header .mainMenu {
-      height: 100vh;
-      position: fixed;
-      color: white;
-      top: 0px;
-      right: 0px;
-      left: 0px;
-      /* z-index: 100001; */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      background: rgb(0, 0, 0);
-      transition: top 1s ease 0s;
-      display: none;
-      /* justify-content: space-between; */
-      /* z-index: 10001; */
-      /* z-index: 10000; */
-    }
-    header .mainMenu .closeMenu {
-      display: block;
-      float: left;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
     header .openMenu {
         color: white;
-      display: block;
-    }
-    header .mainMenu li a:hover {
-      background: none;
-      color: blue;
-    }
-    header.sticky .mainMenu {
-        height: 100vh;
-        position: fixed;
-        color: white;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        /* z-index: 100001; */
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        background: rgb(0, 0, 0);
-        transition: top 1s ease 0s;
-        display: none;
-        /* justify-content: space-between; */
-        /* z-index: 10001; */
-        /* z-index: 10000; */
-      }
-    header.sticky .openMenu i{
-        color: black;
+        font-size: 1.4rem;
     }
     header.sticky .openMenu {
           color: white;
-        display: block;
-    }
-    header.sticky .mainMenu li a{
-        color: white;
-    }
-    header.sticky .mainMenu li a:hover {
-        background: none;
-        color: blue;
-    }
-    .icons i {
-      display: inline-block;
-      padding: 12px;
+        font-size: 1.4rem;
     }
   }
 .banner{
