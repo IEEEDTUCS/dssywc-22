@@ -66,7 +66,7 @@ header ul li a{
     margin: 0 10px;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
@@ -105,7 +105,7 @@ header .openMenu {
         grid-gap: 90%;
     }
     header .logo img{
-        width: 10%;
+        width: 15%;
         text-align: center;
         margin-top: -30px;
         /* margin-bottom: 20px; */
@@ -202,12 +202,12 @@ header .openMenu {
   }
   @media only screen and (max-width: 480px) {
     header{
-        vertical-align: middle;
+        vertical-align:bottom;
     }
     header .logo img{
         width: 25%;
         text-align: center;
-        margin-top: -30px;
+        margin-top: -25px;
         /* margin-bottom: 20px; */
         position: fixed;
     }
@@ -246,7 +246,7 @@ header.sticky ul li a:hover{
 .banner{
     text-align: center;
     /* position: absolute; */
-    padding-top: 25vh;
+    padding-top: 20vh;
     color: #fff;
     /* padding-bottom: 35px; */
     /* border: 2px red solid; */
@@ -254,14 +254,14 @@ header.sticky ul li a:hover{
 .banner .title h1{
     font-family: 'monument-extended';
     src: url('/MonumentExtended-Regular.otf');
-    font-size: 3.4em;
+    font-size: 3em;
 }
 .banner .title p{
-    padding-top: 2px;
+    /* padding-top: 2px; */
     font-weight: 2000;
 }
 .banner .container .register{
-    padding-top: 5vh;
+    padding-top: 2vh;
 }
 .banner .container .countdown{
     color: #FFF;
@@ -410,7 +410,7 @@ header.sticky ul li a:hover{
 article.featured{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0px 30px;
+    padding: 0px 15px;
     width: 90%;
     gap: 60px;
     align-items: center;
@@ -421,6 +421,7 @@ article.featured:nth-child(even) img{
 article.featured p{
     display: flex;
     text-align: justify;
+    width: 100%;
     /* text-justify: inter-word; */
 }
 article img, article.featured img{
@@ -563,6 +564,10 @@ hr{
 {
     .dark-bg-2 .spon-sub-head .content{
         display: block;
+    }
+    .dark-bg-2 .spon-sub-head .content img{
+        text-align: center;
+        width: 100%;
     }
 }
 /* .d-flex-wrap {
