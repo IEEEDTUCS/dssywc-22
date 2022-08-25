@@ -235,6 +235,9 @@ header.sticky .logo,
 header.sticky ul li a{
     color: #000;
 }
+header.sticky .logo{
+    padding-left: 20px;
+}
 header.sticky ul li a:hover{
     color: rgb(255, 102, 0);
 }
