@@ -736,15 +736,14 @@ hr{
     font-size: 3em;
     color: yellow;
 }
-.card-1 .content .contentBx ul{
+.card-1 .content .contentBx .card-inner{
     text-align: center;
     /* align-content: center; */
     /* border: 2px solid red; */
 }
-.card-1 .content .contentBx ul li{
+.card-1 .content .contentBx .card-inner li{
     list-style: none;
     margin: auto;
-    padding-right: 12%;
     text-align: center;
     /* border: 2px red solid; */
     /* text-align: center; */
@@ -781,11 +780,17 @@ hr{
     font-size: 3em;
     color: yellow;
 }
-.card-2 .content .contentBx li{
+.card-2 .content .contentBx .card-inner{
+    text-align: center;
+    /* align-content: center; */
+    /* border: 2px solid red; */
+}
+.card-2 .content .contentBx .card-inner li{
     list-style: none;
     margin: auto;
-    padding-right: 12%;
     text-align: center;
+    /* border: 2px red solid; */
+    /* text-align: center; */
 }
 .card-2 .content .contentBx button a{
     text-decoration: none;
@@ -818,11 +823,17 @@ hr{
     font-size: 3em;
     color: yellow;
 }
-.card-3 .content .contentBx li{
+.card-3 .content .contentBx .card-inner{
+    text-align: center;
+    /* align-content: center; */
+    /* border: 2px solid red; */
+}
+.card-3 .content .contentBx .card-inner li{
     list-style: none;
     margin: auto;
-    padding-right: 12%;
     text-align: center;
+    /* border: 2px red solid; */
+    /* text-align: center; */
 }
 .card-3 .content .contentBx button a{
     text-decoration: none;
@@ -972,7 +983,7 @@ footer{
     line-height: 28px;
     font-size: 14px;
 }
-.footer-content ul{
+.footer-content .foot-icon{
     list-style: none;
     /* display: inline-block; */
     display: flex;
@@ -983,7 +994,7 @@ footer{
     /* border: 2px red solid; */
     margin: 1rem 0 3rem 0;
 }
-.footer-content ul a{
+.footer-content .foot-icon a{
     text-decoration: none;
     color: white;
 }
