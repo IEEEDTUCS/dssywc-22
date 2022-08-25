@@ -410,8 +410,9 @@ article.featured p{
 }
 article img, article.featured img{
     width: 100%;
-    height: 90%;
+    height: 80%;
     border: 2px white solid;
+    background: #000;
 }
 article.featured button{
     background-color: teal;
@@ -1049,7 +1050,7 @@ footer{
     background-color: #000;
     display: flex;
     justify-content: space-between;
-    gap: 35%;
+    /* gap: 35\%; */
     align-items: center;
     padding: 20px 15px;
     border:none;
@@ -1061,10 +1062,11 @@ footer{
     cursor: pointer;
 }
 .questions-container .question p{
-    font-size: 15px;
+    font-size: 10px;
     max-height: 0;
+    /* height: 100vh; */
     opacity: 0;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     color: white;
     overflow: hidden;
     transition: all 0.6s ease;
