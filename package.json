@@ -122,7 +122,7 @@
     "whatwg-url": "^11.0.0"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
