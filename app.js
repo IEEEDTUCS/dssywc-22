@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const homeRouter = require("./routers/HomeRouter");
 const FormRouter = require("./routers/FormRouter");
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 
 const app = express();
 
