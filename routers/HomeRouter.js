@@ -11,7 +11,7 @@ Router.get("/", async (err, res) => {
     const count = users[0].count;
     if (err) return;
     else {
-      res.render("index1", {
+      res.render("index", {
         start: hasStarted,
         Count: count,
         TN: TicketsNow,

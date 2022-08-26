@@ -449,16 +449,17 @@ article.featured button {
   background-size: cover;
   background-position: center;
   padding: 50px 10px;
+  min-height: 100vh;
 }
 .speak-head h1 {
   color: white;
-  font-size: 3em;
+  font-size: 2.4em;
   text-align: center;
 }
 .speak-head h2 {
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 .speaker .container {
   display: flex;
@@ -474,10 +475,12 @@ article.featured button {
   flex-direction: column;
   text-align: center;
   vertical-align: auto;
-  height: 400px;
+  height: 24rem;
   margin: 20px;
   box-shadow: 0 0px 35px rgba(11, 226, 54, 0.5);
   border-radius: 15px;
+  padding-top: 1rem;
+  max-width: 18rem;
 }
 .speaker .container .card .contentBx {
   padding-top: 30px;
@@ -703,6 +706,7 @@ hr {
   background-size: cover;
   background-position: center;
   padding: 50px 10px;
+  min-height: 90vh;
 }
 .tickets .tik-container {
   display: grid;
@@ -976,28 +980,30 @@ hr {
 /* Venue Start */
 #venueWrapper {
   padding: 2rem;
+  background-color: rgb(205, 220, 205);
 }
 #over_map {
-  border-top: 1.5px solid rgb(151, 151, 255);
-  padding: 10px;
   text-align: justify;
   font-family: "Roboto", "sans-serif";
-  line-height: 30px;
+  line-height: 40px;
   margin: 20px 20px;
   width: 90%;
 }
 .flexControl {
   display: flex;
   flex-direction: row;
-}
-.venue {
-  display: flex;
   padding-top: 2rem;
 }
+#venue {
+  display: flex;
+  min-height: 80vh;
+}
 #venueHeader {
-  margin-top: 1rem;
-  text-align: left;
+  margin-bottom: 1rem;
+  text-align: center;
   margin-left: 1rem;
+  font-size: 2rem;
+  padding-right: 1rem;
 }
 #venue .venue-map iframe {
   width: 100%;
@@ -1113,6 +1119,7 @@ footer {
 
 .faq {
   background-color: black;
+  min-height: 100vh;
   /* border: 2px red solid; */
 }
 .faq-title {
@@ -1152,6 +1159,9 @@ footer {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
+}
+.question button > *{
+  margin: 0;
 }
 .questions-container .question p {
   font-size: 15px;
