@@ -987,6 +987,10 @@ hr {
   margin: 20px 20px;
   width: 90%;
 }
+#over_map p{
+  font-size:1.2rem;
+  line-height: 30px;
+}
 .flexControl {
   display: flex;
   flex-direction: row;
@@ -996,6 +1000,7 @@ hr {
   display: flex;
   min-height: 80vh;
 }
+
 #venueHeader {
   margin-bottom: 1rem;
   text-align: center;
