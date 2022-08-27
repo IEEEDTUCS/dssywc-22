@@ -29,9 +29,10 @@ header.sticky {
   /* background: green; */
   /* background-size: cover;
     background-position: center;  */
-  background: rgba(255, 255, 255, 0.647);
-  -webkit-background-composite: blur(8px);
-  width: 100%;
+  /* background: rgba(255, 255, 255, 0.647);
+  -webkit-background-composite: blur(8px); */
+  background: white;
+  width: 100vw;
 }
 
 header .logo {
@@ -44,29 +45,30 @@ header .logo img {
   width: 40%;
   /* border: 2px red solid; */
 }
-header ul {
+header .nav {
   /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header ul li {
+header .nav li {
   /* position: relative; */
   list-style: none;
   cursor: pointer;
   display: inline-block;
 }
-header ul li a:hover {
+header .nav li a:hover {
   color: orange;
 }
-header ul li a {
+header .nav li a {
   /* position: relative; */
   margin: 0 10px;
   text-decoration: none;
+  white-space: nowrap;
   color: #fff;
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
   font-weight: 500px;
   transition: 0.6s;
   align-items: center;
@@ -104,14 +106,14 @@ header .mainMenu .closeMenu,
     grid-gap: 90%;
   }
   header .logo img {
-    width: 10%;
+    width: 15%;
     text-align: center;
     margin-top: -30px;
     /* margin-bottom: 20px; */
     position: fixed;
   }
   header .mainMenu {
-    height: 100vh;
+    height: 100%;
     position: fixed;
     color: white;
     top: 0px;
@@ -120,7 +122,7 @@ header .mainMenu .closeMenu,
     /* z-index: 100001; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background: rgb(0, 0, 0);
     transition: top 1s ease 0s;
@@ -146,7 +148,7 @@ header .mainMenu .closeMenu,
     color: blue;
   }
   header.sticky .mainMenu {
-    height: 100vh;
+    height: 100%;
     position: fixed;
     color: white;
     top: 0px;
@@ -197,11 +199,7 @@ header .mainMenu .closeMenu,
   header.sticky .openMenu {
     color: white;
     font-size: 1.4rem;
-    margin-left: -1rem !important;
   }
-  header ul li a {
-    font-size: 2rem;
-  }  
 }
 @media only screen and (max-width: 480px) {
   header {
@@ -221,14 +219,12 @@ header .mainMenu .closeMenu,
   header.sticky .openMenu {
     color: white;
     font-size: 1.4rem;
-    margin-left: -1rem;
   }
 }
 .banner {
   /* position: relative; */
   width: 100%;
   min-height: 100vh;
-  /* height: 100vh; */
   background: url("/Images/Banner.jpg");
   background-size: cover;
   background-position: center;
@@ -238,7 +234,7 @@ header .mainMenu .closeMenu,
   width: auto;
 }
 header.sticky .logo,
-header.sticky ul li a {
+header.sticky .nav li a {
   color: #000;
 }
 header.sticky .logo {
@@ -251,10 +247,10 @@ header.sticky ul li a:hover {
 .banner {
   text-align: center;
   /* position: absolute; */
-  padding-top: 150px;
+  padding-top: 20vh;
   color: #fff;
   /* height: 100vh; */
-  padding-bottom: 35px;
+  /* padding-bottom: 35px; */
   /* border: 2px red solid; */
 }
 .banner .title h1 {
@@ -266,10 +262,14 @@ header.sticky ul li a:hover {
   padding-top: 2px;
   font-weight: 2000;
 }
+.banner .container .register{
+  padding-top: 2vh;
+}
 .banner .container .countdown {
   color: #fff;
   font-size: 60px;
   font-weight: 200;
+  padding-top: 4vh;
 }
 @media screen and (max-width: 480px) {
   .banner {
@@ -306,6 +306,13 @@ header.sticky ul li a:hover {
 
 .container {
   text-align: center;
+}
+.container .register{
+  padding: 2% 0;
+}
+.container .register h1{
+  font-size: 2.2rem;
+  color: rgb(222, 255, 5);
 }
 .container button {
   width: 200px;
@@ -417,8 +424,10 @@ article.featured p {
 article img,
 article.featured img {
   width: 100%;
-  height: 80%;
+  height: 70%;
   border: 2px white solid;
+  background-size: contain;
+  background-position: center;
   background: #000;
 }
 article.featured button {
@@ -535,11 +544,14 @@ hr {
   font-size: 1.5em;
 }
 .dark-bg-2 .spon-sub-head .content {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
   text-align: center;
   margin: 0px 25%;
 }
 .dark-bg-2 .spon-sub-head .content img {
-  width: 50%;
+  /* text-align: center; */
+  width: 70%;
 }
 @media only screen and (max-width: 768px) {
   .dark-bg-2 .spon-sub-head .content {
@@ -1017,7 +1029,6 @@ hr {
   display: flex;
   min-height: 80vh;
 }
-
 #venueHeader {
   margin-bottom: 1rem;
   text-align: center;
@@ -1132,12 +1143,21 @@ footer {
   width: 240px;
   background-color: rgb(17, 19, 67);
 }
+.columnContactUs > .name{
+  font-size:1rem;
+  font-weight: bold;
+}
 @media only screen and (max-width: 500px) {
   .columnContactUs {
     width: 150px;
   }
 }
-
+@media only screen and (max-width: 330px) {
+  .columnContactUs {
+    width: 140px;
+    font-size: 0.5rem;
+  }
+}
 .faq {
   background-color: black;
   min-height: 100vh;
@@ -1220,8 +1240,6 @@ footer {
     width: 80%;
   }
 }
-
-
 #myBtn {
   display: none;
   position: fixed;
