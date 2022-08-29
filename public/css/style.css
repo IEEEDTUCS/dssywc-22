@@ -32,6 +32,7 @@ header.sticky {
   /* background: rgba(255, 255, 255, 0.647);
   -webkit-background-composite: blur(8px); */
   background: white;
+  color: black !important;
   width: 100vw;
 }
 
@@ -200,6 +201,10 @@ header .mainMenu .closeMenu,
     color: white;
     font-size: 1.4rem;
   }
+  header.sticky .logo,
+  header.sticky .nav li a {
+    color: white !important;
+  }
 }
 @media only screen and (max-width: 480px) {
   header {
@@ -235,7 +240,7 @@ header .mainMenu .closeMenu,
 }
 header.sticky .logo,
 header.sticky .nav li a {
-  color: #000;
+  color: black;
 }
 header.sticky .logo {
   padding-left: 20px;
@@ -262,7 +267,7 @@ header.sticky ul li a:hover {
   padding-top: 2px;
   font-weight: 2000;
 }
-.banner .container .register{
+.banner .container .register {
   padding-top: 2vh;
 }
 .banner .container .countdown {
@@ -307,10 +312,10 @@ header.sticky ul li a:hover {
 .container {
   text-align: center;
 }
-.container .register{
+.container .register {
   padding: 2% 0;
 }
-.container .register h1{
+.container .register h1 {
   font-size: 2.2rem;
   color: rgb(222, 255, 5);
 }
@@ -737,9 +742,9 @@ hr {
 }
 .tickets .tik-container {
   display: grid;
-  margin: 10px 20px;
+  margin: 10px 8px;
   grid-gap: 3%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 0.3fr);
   justify-content: space-between;
   text-align: center;
 }
@@ -770,7 +775,7 @@ hr {
 }
 
 .card-1 .content .contentBx {
-  padding: 20px 20px;
+  padding: 10px 0px;
   text-align: center;
 }
 .card-1 .content .contentBx h1 {
@@ -809,7 +814,7 @@ hr {
 
 .card-2 {
   /* background-color: #b388eb; */
-  background: url("/Images/card2-bg.jpg");
+  background: url("/Images/card1-bg.jpg");
   background-size: cover;
   background-position: center;
   border: 2px white solid;
@@ -817,7 +822,7 @@ hr {
   /* border-radius: 15px; */
 }
 .card-2 .content .contentBx {
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
 .card-2 .content .contentBx h1 {
   margin: 20px 0px;
@@ -862,7 +867,7 @@ hr {
   /* border-radius: 15px; */
 }
 .card-3 .content .contentBx {
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
 .card-3 .content .contentBx h1 {
   margin: 20px 0px;
@@ -897,6 +902,51 @@ hr {
   color: #fff;
   cursor: pointer;
 }
+.card-4 {
+  /* background-color: #f49f0a; */
+  background: url("/Images/card1-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 2px white solid;
+  transition: all 0.5s ease;
+  /* border-radius: 15px; */
+}
+.card-4 .content .contentBx {
+  padding: 10px 10px;
+}
+.card-4 .content .contentBx h1 {
+  margin: 20px 0px;
+  font-size: 3em;
+  color: yellow;
+}
+.card-4 .content .contentBx .card-inner {
+  text-align: center;
+  /* align-content: center; */
+  /* border: 2px solid red; */
+}
+.card-4 .content .contentBx .card-inner li {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  /* border: 2px red solid; */
+  /* text-align: center; */
+}
+.card-4 .content .contentBx button a {
+  text-decoration: none;
+}
+.card-4 .content .contentBx button {
+  width: 60%;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  /* border-radius: 25px; */
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 2px solid white;
+  background: rgba(255, 238, 0, 0.819);
+  color: #fff;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
   .tickets .tik-container {
@@ -909,6 +959,9 @@ hr {
     margin: 30px 0px;
   }
   .card-3 {
+    margin: 30px 0px;
+  }
+  .card-4 {
     margin: 30px 0px;
   }
 }
@@ -1016,8 +1069,8 @@ hr {
   margin: 20px 20px;
   width: 90%;
 }
-#over_map p{
-  font-size:1.2rem;
+#over_map p {
+  font-size: 1.2rem;
   line-height: 30px;
 }
 .flexControl {
@@ -1143,8 +1196,8 @@ footer {
   width: 240px;
   background-color: rgb(17, 19, 67);
 }
-.columnContactUs > .name{
-  font-size:1rem;
+.columnContactUs > .name {
+  font-size: 1rem;
   font-weight: bold;
 }
 @media only screen and (max-width: 500px) {
@@ -1202,7 +1255,7 @@ footer {
   font-weight: 700;
   cursor: pointer;
 }
-.question button > *{
+.question button > * {
   margin: 0;
 }
 .questions-container .question p {

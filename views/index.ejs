@@ -54,7 +54,7 @@
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#galary">Gallery</a></li>
             <li><a href="#faq">FAQ's</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#Contactus">Contact Us</a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <span class="icons">
                 <li>
@@ -204,14 +204,13 @@
                 <!-- <img src="/Images/clients/2.png"> -->
             </div>
         </div>
-        <!-- <div class="spon-sub-head">
+        <div class="spon-sub-head">
         <h1 style="color: white; text-align: center;">Event Sponsors</h1>
         <div class="content">
-          <img src="/Images/clients/1.png">
-          <img src="/Images/clients/2.png">
+          <img src="/Images/WIE_LOGO.png">
         </div>
       </div>
-      <div class="spon-sub-head">
+      <!-- <div class="spon-sub-head">
         <h1 style="color: white; text-align: center;">Associate Sponsors</h1>
         <div class="content">
           <img src="/Images/clients/1.png">
@@ -352,11 +351,11 @@
                             <br />
                         </div>
                         <hr />
-                        <% if(start){ %> <% if(Count >= 0 && Count <= TN){ %>
+                        <% if(start){ %> <% if(IP >= 0 && IP <= Passes[0].TN){ %>
                         <button type="submit" class="button">
                             <a href="/form">Buy Tickets Now</a>
                         </button>
-                        <% }else if(Count > TN && Count <= ES){ %>
+                        <% }else if(IP > Passes[0].TN && IP <= Passes[0].ES){ %>
                         <button type="submit" class="button">
                             <a href="/form">Ending Soon</a>
                         </button>
@@ -395,11 +394,11 @@
                             <br />
                         </div>
                         <hr />
-                        <% if(start){ %> <% if(Count >= 0 && Count <= TN){ %>
+                        <% if(start){ %> <% if(NIP >= 0 && NIP <= Passes[1].TN){ %>
                         <button type="submit" class="button">
                             <a href="/form">Buy Tickets Now</a>
                         </button>
-                        <% }else if(Count > TN && Count <= ES){ %>
+                        <% }else if(NIP > Passes[1].TN && NIP <= Passes[1].ES){ %>
                         <button type="submit" class="button">
                             <a href="/form">Ending Soon</a>
                         </button>
@@ -415,6 +414,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-3">
                 <div class="content">
                     <div class="contentBx">
@@ -437,11 +437,54 @@
                             <br />
                         </div>
                         <hr />
-                        <% if(start){ %> <% if(Count >= 0 && Count <= TN){ %>
+                        <% if(start){ %> <% if(IPA >= 0 && IPA <= Passes[2].TN){ %>
                         <button type="submit" class="button">
                             <a href="/form">Buy Tickets Now</a>
                         </button>
-                        <% }else if(Count > TN && Count <= ES){ %>
+                        <% }else if(IPA > Passes[2].TN && IPA <= Passes[2].ES){ %>
+                        <button type="submit" class="button">
+                            <a href="/form">Ending Soon</a>
+                        </button>
+                        <% }else{ %>
+                        <button type="submit" class="button">
+                            <a href="/">Sold Out</a>
+                        </button>
+                        <% } %> <% }else{ %>
+                        <button type="submit" class="button">
+                            <a href="/">Closed</a>
+                        </button>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-4">
+                <div class="content">
+                    <div class="contentBx">
+                        <h2>
+                            IEEE <br />
+                            ALL ACCESS PASS
+                        </h2>
+                        <h1><i class="fa-solid fa-indian-rupee-sign"></i> 400</h1>
+                        <hr />
+                        <div class="card-inner">
+                            <li>Speaker Session</li>
+                            <br />
+                            <li>Welcome Kit</li>
+                            <br />
+                            <li>Star Night</li>
+                            <br />
+                            <li>Chance to win Prizes</li>
+                            <br />
+                            <li>Unlimited Access to networking activities</li>
+                            <br />
+                        </div>
+                        <hr />
+                        <% if(start){ %> <% if(NIPA >= 0 && NIPA <= Passes[3].TN){ %>
+                        <button type="submit" class="button">
+                            <a href="/form">Buy Tickets Now</a>
+                        </button>
+                        <% }else if(NIPA > Passes[3].TN && NIPA <= Passes[3].ES){ %>
                         <button type="submit" class="button">
                             <a href="/form">Ending Soon</a>
                         </button>

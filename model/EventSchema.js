@@ -9,6 +9,22 @@ const userSchema = new Schema({
     type: Number,
     required: true,
   },
+  IP: {
+    type: Number,
+    required: true,
+  },
+  NIP: {
+    type: Number,
+    required: true,
+  },
+  IPA: {
+    type: Number,
+    required: true,
+  },
+  NIPA: {
+    type: Number,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("EventRegister",userSchema);
