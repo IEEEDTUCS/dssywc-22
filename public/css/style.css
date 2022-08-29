@@ -4,8 +4,19 @@
   margin: auto;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+
 }
 
+/* ::webkit-scrollbar{
+  width:2rem;
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(86, 86, 255) !important;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(86, 86, 255) !important;
+} */
 body {
   background: white;
   min-height: 100vh;
@@ -39,11 +50,13 @@ header.sticky {
 header .logo {
   width: 25%;
   cursor: pointer;
+  display:flex;
   /* position: fixed; */
   /* border: 2px red solid;    */
 }
 header .logo img {
   width: 40%;
+
   /* border: 2px red solid; */
 }
 header .nav {
@@ -109,12 +122,14 @@ header .mainMenu .closeMenu,
   header .logo img {
     width: 15%;
     text-align: center;
-    margin-top: -30px;
     /* margin-bottom: 20px; */
     position: fixed;
   }
   header .mainMenu {
     height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     position: fixed;
     color: white;
     top: 0px;
@@ -128,9 +143,6 @@ header .mainMenu .closeMenu,
     background: rgb(0, 0, 0);
     transition: top 1s ease 0s;
     display: none;
-    /* justify-content: space-between; */
-    /* z-index: 10001; */
-    /* z-index: 10000; */
   }
   header .mainMenu .closeMenu {
     display: block;
@@ -150,6 +162,9 @@ header .mainMenu .closeMenu,
   }
   header.sticky .mainMenu {
     height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     position: fixed;
     color: white;
     top: 0px;
@@ -162,9 +177,7 @@ header .mainMenu .closeMenu,
     background: rgb(0, 0, 0);
     transition: top 1s ease 0s;
     display: none;
-    /* justify-content: space-between; */
-    /* z-index: 10001; */
-    /* z-index: 10000; */
+
   }
   header.sticky .openMenu i {
     color: black;
@@ -252,7 +265,7 @@ header.sticky ul li a:hover {
 .banner {
   text-align: center;
   /* position: absolute; */
-  padding-top: 20vh;
+  padding-top: 24vh;
   color: #fff;
   /* height: 100vh; */
   /* padding-bottom: 35px; */
@@ -274,7 +287,7 @@ header.sticky ul li a:hover {
   color: #fff;
   font-size: 60px;
   font-weight: 200;
-  padding-top: 4vh;
+  padding-top: 1vh;
 }
 @media screen and (max-width: 480px) {
   .banner {
@@ -542,7 +555,7 @@ hr {
   background: #26ccca;
   /* margin: auto; */
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .dark-bg-2 .spon-sub-head h1 {
   padding-top: 30px;
@@ -748,6 +761,7 @@ hr {
   justify-content: space-between;
   text-align: center;
 }
+
 .card-1 {
   /* background-color: #1a659e; */
   background: url("/Images/card1-bg.jpg");
@@ -775,11 +789,11 @@ hr {
 }
 
 .card-1 .content .contentBx {
-  padding: 10px 0px;
+  padding: 4px 0px;
   text-align: center;
 }
 .card-1 .content .contentBx h1 {
-  margin: 20px 0px;
+  margin: 2px 0px;
   font-size: 3em;
   color: yellow;
 }
@@ -802,7 +816,7 @@ hr {
   width: 60%;
   padding: 15px 0;
   text-align: center;
-  margin: 20px 10px;
+  margin: 4px 10px;
   /* border-radius: 25px; */
   font-weight: bold;
   font-size: 1.2em;
@@ -822,10 +836,10 @@ hr {
   /* border-radius: 15px; */
 }
 .card-2 .content .contentBx {
-  padding: 10px 10px;
+  padding: 4px 10px;
 }
 .card-2 .content .contentBx h1 {
-  margin: 20px 0px;
+  margin: 2px 0px;
   font-size: 3em;
   color: yellow;
 }
@@ -848,7 +862,7 @@ hr {
   width: 60%;
   padding: 15px 0;
   text-align: center;
-  margin: 20px 10px;
+  margin: 4px 10px;
   /* border-radius: 25px; */
   font-weight: bold;
   font-size: 1.2em;
@@ -867,10 +881,10 @@ hr {
   /* border-radius: 15px; */
 }
 .card-3 .content .contentBx {
-  padding: 10px 10px;
+  padding: 4px 10px;
 }
 .card-3 .content .contentBx h1 {
-  margin: 20px 0px;
+  margin: 2px 0px;
   font-size: 3em;
   color: yellow;
 }
@@ -893,7 +907,7 @@ hr {
   width: 60%;
   padding: 15px 0;
   text-align: center;
-  margin: 20px 10px;
+  margin: 4px 10px;
   /* border-radius: 25px; */
   font-weight: bold;
   font-size: 1.2em;
@@ -912,10 +926,10 @@ hr {
   /* border-radius: 15px; */
 }
 .card-4 .content .contentBx {
-  padding: 10px 10px;
+  padding: 4px 10px;
 }
 .card-4 .content .contentBx h1 {
-  margin: 20px 0px;
+  margin: 2px 0px;
   font-size: 3em;
   color: yellow;
 }
@@ -938,7 +952,7 @@ hr {
   width: 60%;
   padding: 15px 0;
   text-align: center;
-  margin: 20px 10px;
+  margin: 4px 10px;
   /* border-radius: 25px; */
   font-weight: bold;
   font-size: 1.2em;
@@ -950,7 +964,13 @@ hr {
 
 @media only screen and (max-width: 768px) {
   .tickets .tik-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tickets .tik-container > * {
+    width: 75%;
   }
   .card-1 {
     margin: 30px 0px;

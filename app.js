@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const homeRouter = require("./routers/HomeRouter");
 const FormRouter = require("./routers/FormRouter");
-
+const TeamRouter = require("./routers/TeamRouter"); 
 const port = process.env.PORT || 8080;
 
 const app = express();
@@ -32,5 +32,5 @@ app.use(bodyParser.json());
 
 app.use("/", homeRouter);
 app.use("/form", FormRouter);
-
+app.use("/teams", TeamRouter);
 app.listen(port);

@@ -5,10 +5,6 @@ const userSchema = new Schema({
     type: Boolean,
     required: true,
   },
-  count: {
-    type: Number,
-    required: true,
-  },
   IP: {
     type: Number,
     required: true,

@@ -11,13 +11,13 @@ Router.get("/", async (err, res) => {
     const hasStarted = users[0].isStarted;
     const count = users[0].count;
     const val= EventPasses.PASSES
-    // console.log(EventPasses.PASSES)
-    // console.log(users);
+    console.log(EventPasses.PASSES)
+    console.log(users);
     if (err) return;
     else {
       res.render("index", {
         start: hasStarted,
-        Count: count,
+
         TN: TicketsNow,
         ES: EndingSoon,
         Passes: EventPasses.PASSES,
