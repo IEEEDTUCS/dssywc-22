@@ -795,7 +795,7 @@ hr {
 }
 
 .card-1 .content .contentBx {
-  padding: 4px 0px;
+  padding: 15px 10px;
   text-align: center;
 }
 .card-1 .content .contentBx h1 {
@@ -819,7 +819,7 @@ hr {
   text-decoration: none;
 }
 .card-1 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
@@ -842,7 +842,7 @@ hr {
   /* border-radius: 15px; */
 }
 .card-2 .content .contentBx {
-  padding: 4px 10px;
+  padding: 15px 10px;
 }
 .card-2 .content .contentBx h1 {
   margin: 2px 0px;
@@ -865,7 +865,7 @@ hr {
   text-decoration: none;
 }
 .card-2 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
@@ -887,7 +887,7 @@ hr {
   /* border-radius: 15px; */
 }
 .card-3 .content .contentBx {
-  padding: 4px 10px;
+  padding: 15px 10px;
 }
 .card-3 .content .contentBx h1 {
   margin: 2px 0px;
@@ -910,7 +910,7 @@ hr {
   text-decoration: none;
 }
 .card-3 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
@@ -932,7 +932,7 @@ hr {
   /* border-radius: 15px; */
 }
 .card-4 .content .contentBx {
-  padding: 4px 10px;
+  padding: 15px 10px;
 }
 .card-4 .content .contentBx h1 {
   margin: 2px 0px;
@@ -955,7 +955,7 @@ hr {
   text-decoration: none;
 }
 .card-4 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
