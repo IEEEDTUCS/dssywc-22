@@ -112,6 +112,29 @@ header .mainMenu .closeMenu,
 .fa-github:hover {
   color: blue;
 }
+
+/* header .mainMenu .submenu{
+  display: none;
+} */
+/* header .nav li:hover .submenu{
+  display: block;
+  position: absolute;
+  background: rgb(0, 100, 0);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+header .nav li:hover .submenu ul{
+  display: block;
+  margin: 10px;
+}
+header .nav li:hover .submenu ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+} */
 @media (max-width: 1200px) {
   header {
     /* position: fixed; */
@@ -120,13 +143,17 @@ header .mainMenu .closeMenu,
     grid-gap: 90%;
   }
   header .logo img {
-    width: 15%;
+    width: 17%;
     text-align: center;
-    /* margin-bottom: 20px; */
+    margin-top: -30px;
     position: fixed;
   }
+  header .logo .img2{
+    margin-left: 40%;
+    /* border: 2px red solid; */
+  }
   header .mainMenu {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     padding: 5px;
     margin: 0;
@@ -223,6 +250,9 @@ header .mainMenu .closeMenu,
   header.sticky .logo,
   header.sticky .nav li a {
     color: white !important;
+  }
+  header .logo .img2{
+    margin-left: 40%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -762,9 +792,9 @@ hr {
 .tickets .tik-container {
   display: grid;
   margin: 10px 8px;
-  grid-gap: 3%;
-  grid-template-columns: repeat(4, 0.3fr);
-  justify-content: space-between;
+  grid-gap: 2%;
+  grid-template-columns: repeat(4, 1fr);
+  /* border: 2px red solid; */
   text-align: center;
 }
 
@@ -775,6 +805,7 @@ hr {
   background-position: center;
   border: 2px white solid;
   transition: all 0.5s ease;
+  width: 100%;
   /* border-radius: 15px; */
   /* box-shadow: rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 0px, rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 0px; */
 }
@@ -793,9 +824,13 @@ hr {
     rgba(87, 247, 7, 0.964) 0px 0px 0px, rgba(87, 247, 7, 0.964) 0px 0px 15px,
     rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 0px;
 }
-
+.card-4:hover {
+  box-shadow: rgba(87, 247, 7, 0.964) 0px 0px 15px,
+    rgba(87, 247, 7, 0.964) 0px 0px 0px, rgba(87, 247, 7, 0.964) 0px 0px 15px,
+    rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 0px;
+}
 .card-1 .content .contentBx {
-  padding: 4px 0px;
+  padding: 20px 20px;
   text-align: center;
 }
 .card-1 .content .contentBx h1 {
@@ -823,11 +858,11 @@ hr {
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
-  /* border-radius: 25px; */
+  border-radius: 25px;
   font-weight: bold;
   font-size: 1.2em;
   border: 2px solid white;
-  background: rgba(255, 238, 0, 0.819);
+  background: rgba(255, 238, 0, 0.9);
   color: #fff;
   cursor: pointer;
 }
@@ -839,10 +874,12 @@ hr {
   background-position: center;
   border: 2px white solid;
   transition: all 0.5s ease;
+  width: 100%;
   /* border-radius: 15px; */
 }
 .card-2 .content .contentBx {
-  padding: 4px 10px;
+  /* padding: 4px 10px; */
+  padding: 20px 20px;
 }
 .card-2 .content .contentBx h1 {
   margin: 2px 0px;
@@ -869,11 +906,11 @@ hr {
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
-  /* border-radius: 25px; */
+  border-radius: 25px;
   font-weight: bold;
   font-size: 1.2em;
   border: 2px solid white;
-  background: rgba(255, 238, 0, 0.819);
+  background: rgba(255, 238, 0, 0.9);
   color: #fff;
   cursor: pointer;
 }
@@ -884,10 +921,12 @@ hr {
   background-position: center;
   border: 2px white solid;
   transition: all 0.5s ease;
+  width: 100%;
   /* border-radius: 15px; */
 }
 .card-3 .content .contentBx {
-  padding: 4px 10px;
+  /* padding: 4px 10px; */
+  padding: 20px 20px;
 }
 .card-3 .content .contentBx h1 {
   margin: 2px 0px;
@@ -914,11 +953,11 @@ hr {
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
-  /* border-radius: 25px; */
+  border-radius: 25px;
   font-weight: bold;
   font-size: 1.2em;
   border: 2px solid white;
-  background: rgba(255, 238, 0, 0.819);
+  background: rgba(255, 238, 0, 0.9);
   color: #fff;
   cursor: pointer;
 }
@@ -929,10 +968,12 @@ hr {
   background-position: center;
   border: 2px white solid;
   transition: all 0.5s ease;
+  width: 100%;
   /* border-radius: 15px; */
 }
 .card-4 .content .contentBx {
-  padding: 4px 10px;
+  /* padding: 4px 10px; */
+  padding: 20px 20px;
 }
 .card-4 .content .contentBx h1 {
   margin: 2px 0px;
@@ -959,11 +1000,11 @@ hr {
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
-  /* border-radius: 25px; */
+  border-radius: 25px;
   font-weight: bold;
   font-size: 1.2em;
   border: 2px solid white;
-  background: rgba(255, 238, 0, 0.819);
+  background: rgba(255, 238, 0, 0.9);
   color: #fff;
   cursor: pointer;
 }
@@ -1331,7 +1372,7 @@ footer {
   background-color: rgb(67, 174, 156);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 20px;
   border-radius: 4px;
 }
 
