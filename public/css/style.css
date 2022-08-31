@@ -319,7 +319,7 @@ header.sticky ul li a:hover {
 }
 @media screen and (max-width: 1024px) {
   .banner .container .countdown {
-    font-size: 42px;
+    font-size: 8vw !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -403,7 +403,7 @@ header.sticky ul li a:hover {
 .about p {
   display: flex;
   text-align: justify;
-  /* text-justify: inter-word; */
+  text-justify: inter-word;
   width: 80%;
 }
 
@@ -451,8 +451,9 @@ article.featured img {
   height: 70%;
   border: 2px white solid;
   background-size: contain;
-  background-position: center;
+  background-position: center center;
   background: #000;
+  transform: scale(0.8);
 }
 article.featured button {
   background-color: teal;
