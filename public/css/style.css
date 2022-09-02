@@ -55,7 +55,7 @@ header .logo {
   /* border: 2px red solid;    */
 }
 header .logo img {
-  width: 40%;
+  width: 60%;
 
   /* border: 2px red solid; */
 }
@@ -143,7 +143,7 @@ header .nav li:hover .submenu ul li{
     grid-gap: 90%;
   }
   header .logo img {
-    width: 17%;
+    width: 20%;
     text-align: center;
     margin-top: -30px;
     position: fixed;
@@ -233,7 +233,7 @@ header .nav li:hover .submenu ul li{
 }
 @media only screen and (max-width: 768px) {
   header .logo img {
-    width: 17%;
+    width: 25%;
     text-align: center;
     margin-top: -30px;
     /* margin-bottom: 20px; */
@@ -260,7 +260,7 @@ header .nav li:hover .submenu ul li{
     vertical-align: middle;
   }
   header .logo img {
-    width: 25%;
+    width: 40%;
     text-align: center;
     margin-top: -30px;
     /* margin-bottom: 20px; */
