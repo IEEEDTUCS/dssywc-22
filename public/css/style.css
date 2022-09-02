@@ -349,7 +349,7 @@ header.sticky ul li a:hover {
 }
 @media screen and (max-width: 1024px) {
   .banner .container .countdown {
-    font-size: 42px;
+    font-size: 8vw !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -433,7 +433,7 @@ header.sticky ul li a:hover {
 .about p {
   display: flex;
   text-align: justify;
-  /* text-justify: inter-word; */
+  text-justify: inter-word;
   width: 80%;
 }
 
@@ -481,8 +481,9 @@ article.featured img {
   height: 70%;
   border: 2px white solid;
   background-size: contain;
-  background-position: center;
+  background-position: center center;
   background: #000;
+  transform: scale(0.8);
 }
 article.featured button {
   background-color: teal;
@@ -830,7 +831,8 @@ hr {
     rgba(87, 247, 7, 0.964) 0px 0px 15px, rgba(87, 247, 7, 0.964) 0px 0px 0px;
 }
 .card-1 .content .contentBx {
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
+  padding: 15px 10px;
   text-align: center;
 }
 .card-1 .content .contentBx h1 {
@@ -854,7 +856,7 @@ hr {
   text-decoration: none;
 }
 .card-1 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
@@ -880,6 +882,7 @@ hr {
 .card-2 .content .contentBx {
   /* padding: 4px 10px; */
   padding: 20px 20px;
+  padding: 15px 10px;
 }
 .card-2 .content .contentBx h1 {
   margin: 2px 0px;
@@ -902,7 +905,7 @@ hr {
   text-decoration: none;
 }
 .card-2 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
@@ -926,7 +929,8 @@ hr {
 }
 .card-3 .content .contentBx {
   /* padding: 4px 10px; */
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
+  padding: 15px 10px;
 }
 .card-3 .content .contentBx h1 {
   margin: 2px 0px;
@@ -949,7 +953,7 @@ hr {
   text-decoration: none;
 }
 .card-3 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
@@ -973,7 +977,9 @@ hr {
 }
 .card-4 .content .contentBx {
   /* padding: 4px 10px; */
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
+  padding: 15px 10px;
+
 }
 .card-4 .content .contentBx h1 {
   margin: 2px 0px;
@@ -996,7 +1002,7 @@ hr {
   text-decoration: none;
 }
 .card-4 .content .contentBx button {
-  width: 60%;
+  width: 70%;
   padding: 15px 0;
   text-align: center;
   margin: 4px 10px;
