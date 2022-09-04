@@ -9,8 +9,11 @@
 body {
   margin: 2em 0px;
   background: url(../Images/TeamsBackground.jpg);
-  background-size: cover;
-  min-height: 100vh;
+  background-repeat: round;
+  background-size: contain;
+  background-position: center center;
+  max-height: 100%;
+  /* max-width: 100%; */
   /* width: 80%; */
 }
 

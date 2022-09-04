@@ -143,7 +143,6 @@ buttons.forEach((button) => {
   });
 });
 
-
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -163,4 +162,10 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function show(tn) {
+  document.getElementById("table-1").style.display = "none";
+  document.getElementById("table-2").style.display = "none";
+  document.getElementById("table-" + tn).style.display = "table";
 }
