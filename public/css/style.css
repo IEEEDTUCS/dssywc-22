@@ -1424,6 +1424,7 @@ table {
   margin: 2rem;
   justify-self: center;
   align-self: center;
+  border-bottom: 2px solid black;
 }
 #table-1 {
   display: table;
@@ -1449,7 +1450,7 @@ thead > tr > th {
   background-color: rgb(136, 227, 255) !important;
 }
 tr:nth-of-type(odd) > td {
-  background: rgb(186, 130, 238) !important;
+  background: white !important;
 }
 tr:nth-of-type(even) > td {
   background: rgba(219, 219, 219, 0.455) !important;
@@ -1467,9 +1468,9 @@ th {
   background-color: white;
   color: black;
 }
-@media only screen and (max-width: 760px),
+/* @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Force table to not be like tables anymore */
+
   table,
   thead,
   tbody,
@@ -1479,7 +1480,6 @@ th {
     display: block;
   }
 
-  /* Hide table headers (but not display: none;, for accessibility) */
   thead tr {
     position: absolute;
     top: -9999px;
@@ -1487,11 +1487,12 @@ th {
   }
 
   tr {
-    border: 1px solid #ccc;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
   }
 
   td {
-    /* Behave  like a "row" */
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
@@ -1499,9 +1500,8 @@ th {
   }
 
   td:before {
-    /* Now like a table header */
+
     position: absolute;
-    /* Top/left values mimic padding */
     top: 6px;
     left: 6px;
     width: 45%;
@@ -1512,28 +1512,23 @@ th {
     text-align: start;
     margin-left:45vw;
     margin-right:auto;
+    padding-left: 4px;
+    margin-bottom: 1rem;
+
   }
   .border{
     border-bottom: 0;
-    margin-left: 44vw;
+    margin-left: 45vw;
     margin-right:auto;
   }
+
   td:nth-of-type(1):before {
-    content: "Starting Time";
+    content: "SNo.";
   }
   td:nth-of-type(2):before {
-    content: "Ending Time";
-  }
-  td:nth-of-type(3):before {
-    content: "Duration";
-  }
-  td:nth-of-type(4):before {
     content: "Event";
   }
-  td:nth-of-type(5):before {
-    content: "Track";
+  td:nth-of-type(3):before {
+    content: "Timings";
   }
-  td:nth-of-type(6):before {
-    content: "Speakers";
-  }
-}
+} */
