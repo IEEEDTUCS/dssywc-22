@@ -164,7 +164,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-function show(tn) {
+function showTable(tn) {
   document.getElementById("table-1").style.display = "none";
   document.getElementById("table-2").style.display = "none";
   document.getElementById("table-" + tn).style.display = "table";
