@@ -592,8 +592,10 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .dark-bg-2 .spon-sub-head h1 {
   padding-top: 30px;
+  padding-bottom: 1rem;
   font-size: 1.5em;
 }
 .dark-bg-2 .spon-sub-head .content {
@@ -1419,9 +1421,9 @@ caption {
   font-family: "Times New Roman", Times, serif;
 }
 table {
-  width: 90%;
+  width: 95%;
   border-collapse: collapse;
-  margin: 2rem;
+  margin: 1rem;
   justify-self: center;
   align-self: center;
   border-bottom: 2px solid black;

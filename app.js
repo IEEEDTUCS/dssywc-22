@@ -31,6 +31,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/", homeRouter);
-app.use("/form", FormRouter);
 app.use("/teams", TeamRouter);
 app.listen(port);
