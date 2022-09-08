@@ -533,10 +533,11 @@ article.featured button {
   align-items: center;
   margin: 0px 10px;
 }
-/* .imgBx{
-  width: 6vw;
-  height: 6vh;
-} */
+.imgBx{
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+}
 .speaker .container .card {
   display: flex;
   color: white;
@@ -545,12 +546,12 @@ article.featured button {
   flex-direction: column;
   text-align: center;
   vertical-align: auto;
-  height: 20rem;
-  width: 20rem;
-  margin: 24px;
+  height: 24rem;
+  width: 24rem;
+  margin: 22px;
   box-shadow: 0 0px 35px rgba(11, 226, 54, 0.5);
   border-radius: 15px;
-  padding: 2rem 2rem;
+  padding: 2rem 1.5rem;
   max-width: 16rem;
 }
 .speaker .container .card .contentBx {
