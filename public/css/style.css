@@ -532,6 +532,13 @@ article.featured button {
   justify-content: center;
   align-items: center;
   margin: 0px 10px;
+  /* width: 200px; */
+  /* border: red solid 2px; */
+}
+.imgBx {
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
 }
 .speaker .container .card {
   display: flex;
@@ -542,15 +549,14 @@ article.featured button {
   text-align: center;
   vertical-align: auto;
   height: 24rem;
-  margin: 20px;
+  width: 24rem;
+  margin: 22px;
   box-shadow: 0 0px 35px rgba(11, 226, 54, 0.5);
   border-radius: 15px;
-  padding-top: 1rem;
-  max-width: 18rem;
+  padding: 2rem 1.5rem;
+  max-width: 16rem;
 }
-.speaker .container .card .contentBx {
-  padding-top: 30px;
-}
+
 .fa-brands {
   font-size: 40px;
   cursor: pointer;
@@ -561,7 +567,7 @@ article.featured button {
 }
 @media screen and (max-width: 760px) {
   .speaker .container {
-    display: block;
+    flex-direction: column;
   }
 }
 /* //Sponsor */
@@ -594,9 +600,11 @@ hr {
 }
 
 .dark-bg-2 .spon-sub-head h1 {
+  text-align: center;
+  color: white;
   padding-top: 30px;
   padding-bottom: 1rem;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .dark-bg-2 .spon-sub-head .content {
   /* display: grid;
@@ -606,21 +614,31 @@ hr {
 }
 .dark-bg-2 .spon-sub-head .content img {
   /* text-align: center; */
-  width: 70%;
+  width: 40%;
+}
+.spon-sub-head{
+  margin-top: 3rem;
+}
+.dark-bg-2 .container{
+  padding-top: 5em;
+}
+.dark-bg-2 .container button{
+  font-size: 1.5em;
+  width: 20%;
 }
 @media only screen and (max-width: 768px) {
   .dark-bg-2 .spon-sub-head .content {
     display: block;
   }
   .dark-bg-2 .spon-sub-head .content img {
-    width: 92%;
+    width: 80%;
   }
   .dark-bg-2 .spon-sub-head h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   .container button {
-    width: 285px !important;
-    font-size: 1.4em !important;
+    width: 200px !important;
+    font-size: 1em !important;
   }
   .spon-head h1 {
     font-size: 2em !important;
@@ -1434,19 +1452,19 @@ table {
 #table-2 {
   display: none;
 }
-.split{
-  display:flex;
-  flex-direction:column;
+.split {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 .split > * {
   text-align: left;
   margin: 0rem 0.5rem;
 }
-.border{
-  border-bottom:2px solid black;
-  padding:0rem 0.5rem;
-  margin:0;
+.border {
+  border-bottom: 2px solid black;
+  padding: 0rem 0.5rem;
+  margin: 0;
 }
 thead > tr > th {
   background-color: rgb(136, 227, 255) !important;

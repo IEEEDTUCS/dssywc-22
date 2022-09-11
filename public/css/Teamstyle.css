@@ -27,6 +27,11 @@ header{
     font-weight: 300;
     font-size: 1.5rem;
 }
+a{
+    /* text-decoration: none; */
+    /* color: black; */
+    color: blue;
+}
 .container{
     display: grid;
     margin: 2em 0em;
