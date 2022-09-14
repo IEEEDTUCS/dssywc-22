@@ -618,13 +618,23 @@ hr {
 .dark-bg-2 .spon-sub-head .content {
   /* display: grid;
   grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
-  margin: 0px 25%;
+  max-width: 80%;
+  /* gap: 12px; */
+  /* width: 80%; */
+  /* flex-basis: 2px; */
+  margin: 0px 20%;
+  /* border: 2px red solid; */
 }
 .dark-bg-2 .spon-sub-head .content img {
   /* text-align: center; */
-  width: 40%;
-  height: 40%;
+  /* border: 2px red solid; */
+  cursor: pointer;
+  width: 30%;
+  height: 30%;
 }
 .spon-sub-head{
   margin-top: 3rem;
