@@ -1102,7 +1102,7 @@ hr {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 1440px) and(min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .Acc_imgs > * {
     width: 40vw !important;
     height: 240px !important;
