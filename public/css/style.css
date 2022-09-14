@@ -228,6 +228,9 @@ header .nav li:hover .submenu ul li{
     align-items: center;
     flex-direction: column;
   }
+  .Acc_h1 {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 768px) {
   header .logo img {
@@ -444,7 +447,13 @@ header.sticky ul li a:hover {
   padding: 50px 10px;
 }
 .accommodation {
-  background-image: linear-gradient(#311A6D, #30558F,  #311A6D , #30558F, #311A6D );
+  background-image: linear-gradient(
+    #311a6d,
+    #30558f,
+    #311a6d,
+    #30558f,
+    #311a6d
+  );
   background-size: cover;
   background-position: center center;
   padding: 25px 10px;
@@ -623,7 +632,7 @@ hr {
   /* text-align: center; */
   width: 60%;
 }
-.spon-sub-head{
+.spon-sub-head {
   margin-top: 3rem;
 }
 @media only screen and (max-width: 768px) {
@@ -1053,6 +1062,30 @@ hr {
   }
   .card-4 {
     margin: 30px 0px;
+  }
+}
+/* Accommodation Section */
+.Acc_h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-weight: 350;
+}
+.Acc_h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.Acc_p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.Acc_imgs {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1440px) and(min-width: 768px) {
+  .Acc_imgs > * {
+    width: 40vw !important;
+    height: 240px !important;
   }
 }
 /* Gallary Starts */
