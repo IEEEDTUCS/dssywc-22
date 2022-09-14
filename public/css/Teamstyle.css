@@ -58,6 +58,9 @@ a{
     font-size: 40px;
 }
 
+.container .content .foot-icon li a:visited{
+    color: blue;
+} 
 @media only screen and (max-width:600px){
     .container{
         display:block;

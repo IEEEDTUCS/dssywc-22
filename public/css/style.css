@@ -443,6 +443,14 @@ header.sticky ul li a:hover {
   background-position: center;
   padding: 50px 10px;
 }
+.accommodation {
+  background-image: linear-gradient(#311A6D, #30558F,  #311A6D , #30558F, #311A6D );
+  background-size: cover;
+  background-position: center center;
+  padding: 25px 10px;
+  height: 100%;
+}
+
 .card-head h1 {
   padding-top: 20px;
   margin: 20px 0px;
@@ -450,6 +458,7 @@ header.sticky ul li a:hover {
   color: white;
   margin: auto;
   text-align: center;
+  justify-self: center;
 }
 .grid-container {
   display: grid;
@@ -459,9 +468,9 @@ header.sticky ul li a:hover {
 }
 article.featured {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   padding: 0px 30px;
-  width: 90%;
+  width: 100%;
   gap: 60px;
   align-items: center;
 }
